@@ -137,3 +137,7 @@ MAILERS = {
 LOGIN_REDIRECT_URL = '/orders/'
 LOGOUT_REDIRECT_URL = '/login/'
 LOGIN_URL = '/login/'
+
+
+GROQ_API_KEY=config("GROQ_API_KEY")
+GROQ_MODEL=config("GROQ_MODEL")
