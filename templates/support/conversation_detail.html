@@ -114,7 +114,7 @@
 
       chatTranscript.scrollTop = chatTranscript.scrollHeight;
     }
-
+    
     function showSpinner(){
       document.getElementById("agent-activity").insertAdjacentHTML("beforeend", 
         `<div class="spinner-border spinner-border-sm" id="agent-spinner" role="status"></div>`
@@ -153,7 +153,7 @@
       agentActivity.scrollTop = agentActivity.scrollHeight;
     }
 
-    const conversationId = "{{ conversation.id }}";
+    const conversationId = {{ conversation.id }};
     const source = new EventSource(`/support/dashboard/stream/${conversationId}/`); // establishing SSE connection
 
     source.onmessage = (e) => {

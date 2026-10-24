@@ -3,7 +3,7 @@ from groq import Groq
 from django.conf import settings
 from .tools import get_order_details, get_refund_history, check_delivery_status, get_customer_risk_profile, search_knowledge_base
 from .models import Conversation, Message, AgentLog
-from .event_queue import DONE, publish # type: ignore
+from .event_queue import DONE, publish
 
 
 # Initialize Groq client
